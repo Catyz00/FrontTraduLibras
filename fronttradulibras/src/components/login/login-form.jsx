@@ -68,7 +68,7 @@ export function LoginForm({ className, ...props }) {
                 type="submit"
                 className="w-full bg-[#FD8700] hover:bg-[#FD8700] transition-transform duration-200 hover:scale-105"
               >
-                Login
+                Entrar
               </Button>
 
               <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
