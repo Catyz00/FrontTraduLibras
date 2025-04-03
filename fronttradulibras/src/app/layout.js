@@ -1,19 +1,17 @@
-import Navbar from '@/components/navbar/navbar';
+import { Inter } from 'next/font/google';
 import './globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'TraduLibras',
-  description: 'Protegendo Todos Seus Momentos',
+  description: 'Plataforma de tradução de texto para Libras',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body>
-        <Navbar />
-        {/* Adicione padding top e bottom equivalente à altura do navbar e footer */}
-        <div className="pt-16 pb-16">{children}</div>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
