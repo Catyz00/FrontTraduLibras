@@ -1,5 +1,6 @@
 import Navbar from '@/components/navbar/navbar';
 import './globals.css';
+import Footer from '@/components/footer/footer';
 
 export const metadata = {
   title: 'Prime Secure',
@@ -12,7 +13,10 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {/* Adicione padding top e bottom equivalente à altura do navbar e footer */}
-        <div className="pt-16 pb-16">{children}</div>
+        <div className="pt-16 pb-16">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
