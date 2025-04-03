@@ -2,7 +2,7 @@ import Navbar from '@/components/navbar/navbar';
 import './globals.css';
 
 export const metadata = {
-  title: 'Prime Secure',
+  title: 'TraduLibras',
   description: 'Protegendo Todos Seus Momentos',
 };
 
