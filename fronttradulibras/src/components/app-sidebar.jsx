@@ -34,7 +34,9 @@ export function AppSidebar({ className }) {
                 height={28}
                 className="rounded-full"
               />
-              <h2 className="text-lg font-semibold">Tradulibras</h2>
+              <h2 className="text-lg font-semibold text-[#004369]">
+                Tradulibras
+              </h2>
             </div>
           ) : (
             <div className="flex items-center justify-center w-full">
@@ -50,7 +52,7 @@ export function AppSidebar({ className }) {
         </div>
       </div>
       <nav className="flex-1 overflow-auto py-4">
-        <ul className="flex flex-col gap-1 px-2">
+        <ul className="flex flex-col gap-1 px-2 text-[#3B3F46]">
           <SidebarItem
             href="/translator"
             icon={<MessageSquare />}
