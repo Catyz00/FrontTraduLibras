@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blueTradu: 'var(--blueTradu)',
-        darkblueTradu: 'var(--darkblueTradu)',
-        beigeTradu: 'var(--beigeTradu)',
-        orangeTradu: 'var(--orangeTradu)',
-        whiteTradu: 'var(--whiteTradu)',
-        grayTradu: 'var(--grayTradu)',
+        bluetradu: 'var(--bluetradu)',
+        darkbluetradu: 'var(--darkbluetradu)',
+        beigetradu: 'var(--beigetradu)',
+        orangetradu: 'var(--orangetradu)',
+        whitetradu: 'var(--whitetradu)',
+        graytradu: 'var(--graytradu)',
       },
     },
   },
