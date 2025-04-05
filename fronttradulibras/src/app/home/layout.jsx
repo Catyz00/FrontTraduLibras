@@ -13,7 +13,7 @@ export default function HomeLayout({ children }) {
       <body>
         <Navbar>
           {/* Adicione padding top e bottom equivalente à altura do navbar e footer */}
-        <div className="pt-16 pb-16">{children}</div>
+        <div>{children}</div>
         </Navbar>
         
       
