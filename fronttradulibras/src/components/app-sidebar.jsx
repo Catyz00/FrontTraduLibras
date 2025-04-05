@@ -102,7 +102,7 @@ function SidebarItem({ href, icon, label, open }) {
     <li>
       <Link
         href={href}
-        className="flex items-center gap-3 rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+        className="flex items-center gap-3 rounded-md px-3 py-2 text-muted-foreground hover:bg-bluetradu/20 hover:text-foreground focus:bg-oragetradu"
       >
         <span className="flex h-5 w-5 items-center justify-center">{icon}</span>
         {open && <span>{label}</span>}
