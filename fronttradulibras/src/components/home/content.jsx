@@ -12,7 +12,12 @@ export default function ContentHome() {
   const handleSearch = () => {
     if (input.trim() !== "") {
       const existingHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
-      const updatedHistory = [...existingHistory, input];
+      const newEntry = {
+        text: input,
+        video: "/videos/default.mp4", // Aqui você pode ajustar o vídeo dependendo da palavra
+        timestamp: new Date().toLocaleTimeString()
+      };
+      const updatedHistory = [...existingHistory, newEntry];
       localStorage.setItem("searchHistory", JSON.stringify(updatedHistory));
     }
 
@@ -20,6 +25,12 @@ export default function ContentHome() {
     setTimeout(() => {
       router.push("/translator");
     }, 2000);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
   };
 
   if (isLoading) {
@@ -50,6 +61,7 @@ export default function ContentHome() {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            onKeyPress={handleKeyPress} // Adicionando o evento para a tecla Enter
             placeholder='Exemplo : "Aranha"'
             className="transition-all duration-300 ease-in-out w-80 focus:w-290 p-3 rounded-l-lg border border-gray-300 text-gray-700 focus:outline-none bg-bluetradu/20"
           />
