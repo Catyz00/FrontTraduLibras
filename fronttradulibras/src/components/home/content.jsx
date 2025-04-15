@@ -75,13 +75,17 @@ export default function ContentHome() {
       </div>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <button className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105 flex flex-col items-center">
-          <BookOpen className="text-darkbluetradu w-12 h-12 mb-2" />
-          <h3 className="text-lg font-semibold text-orangetradu mt-2">Traduzir</h3>
-          <p className="text-gray-600 text-sm">
-            Converta palavras em Libras de forma rápida e intuitiva.
-          </p>
-        </button>
+      <button
+  onClick={() => router.push("/translator")}
+  className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105 flex flex-col items-center"
+>
+  <BookOpen className="text-darkbluetradu w-12 h-12 mb-2" />
+  <h3 className="text-lg font-semibold text-orangetradu mt-2">Traduzir</h3>
+  <p className="text-gray-600 text-sm">
+    Converta palavras em Libras de forma rápida e intuitiva.
+  </p>
+</button>
+
         <button className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105 flex flex-col items-center">
           <GraduationCap className="text-darkbluetradu w-12 h-12 mb-2" />
           <h3 className="text-lg font-semibold text-orangetradu mt-2">Aprender</h3>
