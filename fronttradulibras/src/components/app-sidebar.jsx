@@ -24,32 +24,33 @@ export function AppSidebar({ className }) {
       }`}
     >
       <div className="p-4">
-        <div className="flex items-center justify-start">
-          {open ? (
-            <div className="flex items-center space-x-2">
-              <Image
-                src="/images/logo/icon.png"
-                alt="TraduLibras Logo"
-                width={28}
-                height={28}
-                className="rounded-full"
-              />
-              <h2 className="text-lg font-semibold text-[#004369]">
-                Tradulibras
-              </h2>
-            </div>
-          ) : (
-            <div className="flex items-center justify-center w-full">
-              <Image
-                src="/images/logo/icon.png"
-                alt="TraduLibras Logo"
-                width={32}
-                height={32}
-                className="rounded-full"
-              />
-            </div>
-          )}
-        </div>
+      <Link href="/home" className="flex items-center justify-start">
+  {open ? (
+    <div className="flex items-center space-x-2">
+      <Image
+        src="/images/logo/icon.png"
+        alt="TraduLibras Logo"
+        width={28}
+        height={28}
+        className="rounded-full"
+      />
+      <h2 className="text-lg font-semibold text-[#004369]">
+        Tradulibras
+      </h2>
+    </div>
+  ) : (
+    <div className="flex items-center justify-center w-full">
+      <Image
+        src="/images/logo/icon.png"
+        alt="TraduLibras Logo"
+        width={32}
+        height={32}
+        className="rounded-full"
+      />
+    </div>
+  )}
+</Link>
+
       </div>
       <nav className="flex-1 overflow-auto py-4">
         <ul className="flex flex-col gap-1 px-2 text-[#3B3F46]">
