@@ -1,5 +1,6 @@
-import Image from 'next/image';
+// app/page.js
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return <div className=""></div>;
+  redirect('/home');
 }
