@@ -14,11 +14,11 @@ export function RegisterForm({ className, ...props }) {
 
   return (
     <div className={cn('flex flex-col gap-6 text-xs', className)} {...props}>
-      <Card className="overflow-hidden p-0 bg-[#f3f3f3] border border-[#3B3F46]/30 shadow-2xl">
+      <Card className="overflow-hidden p-0 border bg-[#f3f3f3] border-[#3B3F46]/30 shadow-2xl">
         <CardContent className="grid p-0 md:grid-cols-2">
           <div className="bg-muted relative hidden md:block">
             <img
-              src="/images/img login.png"
+              src="/images/register.png"
               alt="Image"
               className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
@@ -27,9 +27,9 @@ export function RegisterForm({ className, ...props }) {
             <div className="flex flex-col gap-3">
               <div className="flex flex-col items-left text-left">
                 <div>
-                  <img src="/" alt="Logo" />
+                <img src="/images/logo/logo-escura.png" alt="Logo" className="w-32 h-auto mb-5" />
                 </div>
-                <h1 className="text-xl font-bold text-[#4F40FF]">
+                <h1 className="text-xl font-bold text-darkbluetradu">
                   Traduzindo palavras em inclusão.
                 </h1>
                 <p className="text-sm text-[#3B3F46]">Faça o seu registro</p>
@@ -160,11 +160,17 @@ export function RegisterForm({ className, ...props }) {
                   Faça o Login
                 </a>
               </div>
+              <div className="text-center text-sm text-[#3B3F46]">
+                Ou continue como{' '}
+                <a href="/home" className="underline underline-offset-4 hover:text-[#4F40FF]">
+                  Convidado
+                  </a>
+              </div>
             </div>
           </form>
         </CardContent>
       </Card>
-      <div className="*:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4 text-white">
+      <div className="*:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4 text-graytradu">
         Ao clicar em continuar, você aceita nossos{' '}
         <a href="#">Termos e Serviços</a> e{' '}
         <a href="#">Politica de Privacidade</a>.
