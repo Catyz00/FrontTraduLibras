@@ -47,7 +47,7 @@ export default function ContentHome() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-50 to-orange-100 p-6">
       <h1 className="text-4xl font-bold text-gray-900 text-center">
-        Boas-vindas ao{" "}
+        Boas-Vindas ao{" "}
         <span className="text-black px-2 rounded-md bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 bg-clip-text text-transparent">
           Tradulibras
         </span>
