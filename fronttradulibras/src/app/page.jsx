@@ -36,6 +36,12 @@ export default function HomePage() {
             >
               Aprender
             </Link>
+            <Link
+              href="/help"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              Ajuda
+            </Link>
           </nav>
           <div className="flex items-center gap-4">
             <Link href="/login">
